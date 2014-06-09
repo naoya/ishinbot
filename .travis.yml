@@ -1,0 +1,6 @@
+language: ruby
+deploy:
+  provider: heroku
+  app: ishinbot
+  api_key:
+    secure: QcK2JL5mL4fHJ02WNSs2atV8C6P+OFCtCAVcC9+T+CpAi4bCDElUMo/bS6Oxf29ORBge9hfA7YxIePioqA8iiPRCKmXhPopB1qX87DC2C3hpK6kes8Je2+HsQFVaszhpo+sf+pT0Evr7wbzk6DgZVijuOAXO5TPTk8TEcCQPo7g=
