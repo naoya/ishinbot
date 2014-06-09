@@ -1,1 +1,1 @@
-web: bin/hubot --adapter slack
+app: bin/hubot --adapter hipchat
