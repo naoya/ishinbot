@@ -9,8 +9,8 @@ client = require("cheerio-httpcli");
 module.exports = (robot) ->
   robot.hear /ちくわ/, (msg) ->
     client.fetch 'http://tiqav.com', {}, (err, $, res) ->
-      imgs = $("body").find("img")
+      imgs = $("body").find(".box")
       lenImg = imgs.length
       idx = Math.floor Math.random() * lenImg;
-      msg.send $("body").find("img").eq(idx).attr("src")
+      msg.send imgs.eq(idx).find("img").attr("src")
 
