@@ -1,4 +1,5 @@
 language: ruby
+script: echo OK
 deploy:
   provider: heroku
   app: ishinbot
