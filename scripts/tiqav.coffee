@@ -8,8 +8,7 @@ client = require("cheerio-httpcli");
 
 module.exports = (robot) ->
   robot.hear /ちくわ/, (msg) ->
-    inputTxt = msg.match.input
-    inputTxt.split("　").join(" ")
+    inputTxt = msg.match.input.split("　").join(" ")
     aryInput = inputTxt.split(" ")
     reqUrl = "http://tiqav.com"
     if 1 < aryInput.length
@@ -20,6 +19,3 @@ module.exports = (robot) ->
       lenImg = imgs.length
       idx = Math.floor Math.random() * lenImg;
       msg.send imgs.eq(idx).find("img").attr("src")
-
-
-
